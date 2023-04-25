@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
 
 .elements {
     display: flex;
@@ -5,9 +7,12 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    border: 1px solid darkgoldenrod;
+    border: 3px solid #222;
     background-color: #eee;
+    border-radius: 1rem;
+    margin:5px;
 }
+
 
 /* Section One */
 .square {
@@ -236,3 +241,106 @@
 }
 
 /* End Of Section Six */
+/* Section Seven */
+.loading {
+    display: flex;
+}
+.loading h1 {
+    font-family: 'Sigmar', cursive;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+.l::before {
+    position: absolute;
+    content: "L";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite;
+}
+
+.o::before {
+    position: absolute;
+    content: "o";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .1s;
+}
+
+.a::before {
+    position: absolute;
+    content: "a";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .2s;
+}
+
+.d::before {
+    position: absolute;
+    content: "d";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .3s;
+}
+
+.i::before {
+    position: absolute;
+    content: "i";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .4s;
+}
+
+.n::before {
+    position: absolute;
+    content: "n";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .5s;
+}
+
+.g::before {
+    position: absolute;
+    content: "g";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .6s;
+}
+
+.dot::before {
+    position: absolute;
+    content: ".";
+    color: red;
+    transform-origin: left;
+    transform: scale(0);
+    transition: all 400ms;
+    animation: loading 2.5s infinite .7s;
+}
+
+@keyframes loading {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+/* End Of Section Seven */
